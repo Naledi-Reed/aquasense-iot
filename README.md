@@ -34,6 +34,10 @@ Sensors
 
 ## Project-management evidence
 
+[→ View evidence](evidence/)
+
+Included: the 12-week Gantt chart, a fishbone (Ishikawa) diagram, a 6M-method breakdown, and a risk assessment matrix.
+
 The project documentation covers:
 
 - Scope of work
