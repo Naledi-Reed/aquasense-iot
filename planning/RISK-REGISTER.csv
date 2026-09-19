@@ -1,0 +1,7 @@
+ID,Risk,Likelihood,Impact,Mitigation,Owner,Status
+R1,Sensor readings are inaccurate,Medium,High,Calibrate sensors and compare against reference readings,Technical Lead,Open
+R2,Network connectivity is unavailable,Medium,Medium,Buffer readings locally and retry with backoff,Technical Lead,Open
+R3,Device credentials are exposed,Low,High,Use unique secrets and keep them outside source control,Security Lead,Open
+R4,Cloud cost exceeds budget,Medium,Medium,Set budgets quotas and retention limits,Project Manager,Open
+R5,Water exposure damages electronics,Medium,High,Use suitable enclosure and isolate wet components,Hardware Lead,Open
+R6,Project tasks fall behind schedule,Medium,Medium,Review dependencies weekly and prioritise critical-path tasks,Project Manager,Open
