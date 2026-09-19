@@ -1,88 +1,52 @@
-# AquaSense IoT System Concept
+<div align="center">
 
-A project-management and solution-design case study for a proposed smart-irrigation and environmental-monitoring system.
+# 💧 AquaSense IoT System Concept
+
+**Smart irrigation architecture and delivery-planning case study**
+
+[![Architecture](https://img.shields.io/badge/OPEN_ARCHITECTURE-B6FF00?style=for-the-badge&logo=diagramsdotnet&logoColor=07110D)](architecture/SYSTEM-ARCHITECTURE.md)
+[![Project Plan](https://img.shields.io/badge/OPEN_PROJECT_PLAN-101820?style=for-the-badge&logo=libreofficecalc&logoColor=B6FF00)](planning/PROJECT-PLAN.csv)
+[![Download](https://img.shields.io/badge/DOWNLOAD_CASE_STUDY-B6FF00?style=for-the-badge&logo=github&logoColor=07110D)](https://github.com/Naledi-Reed/aquasense-iot/archive/refs/heads/main.zip)
+
+</div>
+
+## Project position
 
 **Status:** Concept and delivery-planning case study  
-**Module:** PMM261 - Project Management  
-**Implementation:** Not yet built as a working hardware or cloud system
+**Implementation:** Not presented as a completed hardware or cloud build
 
-## The problem
+AquaSense proposes the use of soil-moisture, temperature, humidity and water-flow sensors to support better irrigation decisions and reduce unnecessary water use.
 
-Small farms and residential growers need timely information about soil and environmental conditions to make better irrigation decisions and reduce unnecessary water use.
+## Editable project files
 
-## Proposed system
+| File | Purpose |
+|---|---|
+| [SYSTEM-ARCHITECTURE.md](architecture/SYSTEM-ARCHITECTURE.md) | Proposed data flow, components and security requirements |
+| [PROJECT-PLAN.csv](planning/PROJECT-PLAN.csv) | Editable phases, tasks, dependencies and deliverables |
+| [RISK-REGISTER.csv](planning/RISK-REGISTER.csv) | Editable risks, impacts, owners and mitigations |
+| [system-summary.md](docs/system-summary.md) | Concise system overview |
+| [evidence/](evidence/) | Gantt, fishbone, 6M and risk-matrix visuals |
+
+CSV files can be downloaded and opened directly in Microsoft Excel, Google Sheets or LibreOffice Calc.
+
+## Proposed architecture
 
 ```text
-Soil moisture, temperature, humidity and water-flow sensors
-                           |
-                           v
-                     Microcontroller
-                           |
-                           v
-                        Network
-                           |
-                           v
-                    Cloud services
-                           |
-                           v
-                  User-facing dashboard
+Sensors → Microcontroller → Secure messaging → Cloud ingestion
+        → Time-series storage → Authenticated dashboard → Alerts
 ```
 
-## Work completed
+## Future milestones
 
-The project documentation covers:
-
-- Problem definition and objectives
-- Scope and project boundaries
-- Constraints and assumptions
-- Work breakdown structure
-- Twelve-week schedule and Gantt plan
-- Task dependencies and critical-path analysis
-- Risk identification and mitigation
-- Monitoring and evaluation planning
-- Integration and testing strategy
-
-## Evidence
-
-[View the selected planning evidence](evidence/)
-
-Included evidence:
-
-- Gantt chart
-- Fishbone diagram
-- 6M analysis
-- Risk assessment matrix
-
-## Security considerations for a future build
-
-A real implementation should include:
-
-- Device identity and secure onboarding
-- Encrypted data transmission
-- Role-based dashboard access
-- Secret and credential protection
-- Input validation
-- Monitoring and alerting
-- Secure software and firmware updates
-
-## Future engineering milestones
-
-1. Build a sensor prototype
-2. Add MQTT or another messaging layer
-3. Implement cloud data ingestion
+1. Build and calibrate the sensor prototype
+2. Add secure MQTT messaging
+3. Implement cloud ingestion and storage
 4. Develop an authenticated dashboard
-5. Add monitoring and alerts
-6. Automate deployment and testing
+5. Add monitoring, testing and deployment automation
 
-## Skills demonstrated
+## Security requirements
 
-- IoT solution architecture
-- Systems thinking
-- Project scheduling
-- Risk analysis
-- Technical planning
-- Security-aware design
+Unique device identity • TLS • secret protection • role-based access • validation • logging • controlled firmware updates
 
-## Academic context
-
-This repository presents a sanitised public summary of project-management work completed at Belgium Campus iTversity in 2026. It is deliberately labelled as a concept rather than a completed implementation.
+**Module origin:** PMM261 — Project Management  
+**Status:** Honest, editable technical planning portfolio
