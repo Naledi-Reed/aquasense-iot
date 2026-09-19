@@ -1,0 +1,10 @@
+ID,Phase,Task,DurationWeeks,DependsOn,Deliverable
+1,Initiation,Define problem and stakeholders,1,,Approved problem statement
+2,Planning,Confirm scope assumptions and constraints,1,1,Scope baseline
+3,Design,Produce system architecture,2,2,Architecture document
+4,Design,Select sensors and communication method,1,2,Bill of materials
+5,Prototype,Assemble sensor prototype,2,3;4,Working edge prototype
+6,Cloud,Configure secure data ingestion,2,3,Telemetry endpoint
+7,Application,Build dashboard prototype,2,6,Dashboard demonstration
+8,Testing,Run integration and security tests,1,5;6;7,Test report
+9,Closure,Review outcomes and lessons learned,1,8,Closure report
